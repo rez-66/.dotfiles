@@ -13,12 +13,14 @@ Plug 'nvim-treesitter/playground'
 Plug 'neovim/nvim-lspconfig'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'akinsho/bufferline.nvim'
+Plug 'vv9k/bogster'
 
 call plug#end()
 
+set guicursor=i:block
 
 syntax on
-colorscheme PaperColor
+colorscheme bogster 
 
 
 "Telescope bindings"
@@ -28,9 +30,12 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 "neovim terminal bindings"
-nnoremap <leader>t <cmd>terminal<cr>
+nnoremap <leader>t <cmd>vs<cr><cmd>terminal<cr>
 tnoremap <Esc> <C-\><C-n>
 
+"" remaps
+nnoremap <leader>n <cmd>bn<cr>
+nnoremap <leader>p <cmd>bn<cr>
 
 lua << EOF
 

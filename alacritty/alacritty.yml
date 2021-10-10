@@ -1,8 +1,0 @@
-window:
-  padding:
-    x: 3
-    y: 3
-font:
-  normal:
-    family: JetBrains Mono
-  size: 9 
