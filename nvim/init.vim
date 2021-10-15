@@ -14,6 +14,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
 " Telescope keys
@@ -21,6 +22,11 @@ nnoremap <leader>ff <cmd>Telescope find_files theme=dropdown<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep theme=dropdown<cr>
 nnoremap <leader>fb <cmd>Telescope buffers theme=dropdown<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags theme=dropdown<cr>
+
+
+set t_Co=256
+set t_ut=
+colorscheme codedark
 
 lua require('lsp')
 
